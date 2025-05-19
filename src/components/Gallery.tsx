@@ -12,7 +12,7 @@ interface Media {
 const mediaItems: Media[] = [
   {
     id: 1,
-    url: import.meta.env.BASE_URL + "images/img1.jpg",
+    url: import.meta.env.BASE_URL + "images/img1.JPG",
     caption: "KIYUKKK",
     type: "image"
   },
@@ -36,19 +36,19 @@ const mediaItems: Media[] = [
   },
   {
     id: 5,
-    url: import.meta.env.BASE_URL + "images/img5.jpg",
+    url: import.meta.env.BASE_URL + "images/img5.JPG",
     caption: "DENGOR LAGU LU SAMBIL JADI COMEL",
     type: "image"
   },
   {
     id: 6,
-    url: import.meta.env.BASE_URL + "images/img6.jpg",
+    url: import.meta.env.BASE_URL + "images/img6.JPG",
     caption: "DENGOR LAGU LU SAMBIL JADI COMEL V2",
     type: "image"
   },
   {
     id: 7,
-    url: import.meta.env.BASE_URL + "images/vid4.mp4",
+    url: import.meta.env.BASE_URL + "images/vid4.MP4",
     caption: "YANG NI DEKAT AIRPORT NAK GI HANTAR UMMI UMRAH",
     type: "video"
   },
@@ -60,7 +60,7 @@ const mediaItems: Media[] = [
   },
   {
     id: 9,
-    url: import.meta.env.BASE_URL + "images/vid5.mp4",
+    url: import.meta.env.BASE_URL + "images/vid5.MP4",
     caption: "DEKAT PANTAI",
     type: "video"
   }
