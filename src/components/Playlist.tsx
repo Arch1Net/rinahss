@@ -42,7 +42,7 @@ const songs: Song[] = [
     title: "Back To December",
     artist: "Taylor Swift",
     duration: "4:47",
-    src: import.meta.env.BASE_URL + "music/Back to December.mp3",
+    src: import.meta.env.BASE_URL + "music/Back To December.mp3",
   },
   {
     id: 5,
