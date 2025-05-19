@@ -21,59 +21,60 @@ const App = () => {
 const mediaItems: Media[] = [
   {
     id: 1,
-    url: "/images/img1.jpg",
+    url: import.meta.env.BASE_URL + "images/img1.jpg",
     caption: "KIYUKKK",
     type: "image"
   },
   {
     id: 2,
-    url: "/images/img9.jpg",
+    url: import.meta.env.BASE_URL + "images/img9.jpg",
     caption: "LAWOOOO",
     type: "image"
   },
   {
     id: 3,
-    url: "/images/img7.jpg",
+    url: import.meta.env.BASE_URL + "images/img7.jpg",
     caption: "NI PUN KIYUKK",
     type: "image"
   },
   {
     id: 4,
-    url: "/images/img2.jpg",
+    url: import.meta.env.BASE_URL + "images/img2.jpg",
     caption: "ITIKKKK",
     type: "image"
   },
   {
     id: 5,
-    url: "/images/img5.jpg",
+    url: import.meta.env.BASE_URL + "images/img5.jpg",
     caption: "DENGOR LAGU LU SAMBIL JADI COMEL",
     type: "image"
   },
   {
     id: 6,
-    url: "/images/img6.jpg",
+    url: import.meta.env.BASE_URL + "images/img6.jpg",
     caption: "DENGOR LAGU LU SAMBIL JADI COMEL V2",
     type: "image"
   },
   {
     id: 7,
-    url: "images/vid4.mp4",
+    url: import.meta.env.BASE_URL + "images/vid4.mp4",
     caption: "YANG NI DEKAT AIRPORT NAK GI HANTAR UMMI UMRAH",
     type: "video"
   },
   {
     id: 8,
-       url: "images/vid2.mp4",
+    url: import.meta.env.BASE_URL + "images/vid2.mp4",
     caption: "PEGANG KUCING",
     type: "video"
   },
   {
     id: 9,
-       url: "images/vid5.mp4",
+    url: import.meta.env.BASE_URL + "images/vid5.mp4",
     caption: "DEKAT PANTAI",
     type: "video"
   }
 ];
+
 
 const Gallery: React.FC = () => {
   const [selectedMedia, setSelectedMedia] = useState<Media | null>(null);
