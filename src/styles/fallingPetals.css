@@ -1,0 +1,57 @@
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+}
+
+.petal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle at 30% 30%, #fff, #ffcce6);
+  border-radius: 100% 0 100% 0;
+  box-shadow: 0 0 10px rgba(255, 192, 203, 0.3);
+}
+
+.petal:nth-child(2n) {
+  background: radial-gradient(circle at 30% 30%, #fff, #ffa6d1);
+}
+
+.petal:nth-child(3n) {
+  background: radial-gradient(circle at 30% 30%, #fff, #ff8ac4);
+}
+
+.petal:nth-child(4n) {
+  background: radial-gradient(circle at 30% 30%, #fff, #ff69b4);
+}

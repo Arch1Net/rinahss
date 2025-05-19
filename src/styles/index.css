@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+/* Navigation Links */
+.nav-link {
+  @apply font-medium text-gray-600 hover:text-pink-500 transition-colors duration-300;
+}
+
+/* Countdown Item */
+.countdown-item {
+  @apply bg-white rounded-xl shadow-sm p-6 w-20 md:w-24 flex flex-col items-center justify-center transition-transform hover:transform hover:scale-105;
+}
+
+.countdown-value {
+  @apply font-serif text-3xl md:text-4xl font-semibold text-gray-800 mb-1;
+}
+
+.countdown-label {
+  @apply text-sm text-gray-500;
+}
+
+/* Music Player Animation */
+.playing-animation {
+  display: flex;
+  align-items: flex-end;
+  height: 14px;
+  gap: 1px;
+}
+
+.playing-animation span {
+  display: inline-block;
+  width: 3px;
+  height: 5px;
+  background-color: #ec4899;
+  border-radius: 1px;
+  animation: playing 1.5s infinite ease-in-out;
+}
+
+.playing-animation span:nth-child(2) {
+  animation-delay: 0.25s;
+  height: 8px;
+}
+
+.playing-animation span:nth-child(3) {
+  animation-delay: 0.5s;
+  height: 6px;
+}
+
+@keyframes playing {
+  0%, 100% {
+    transform: scaleY(0.8);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}
+
+/* Prevent overflow for fixed elements */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbcfe8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f9a8d4;
+}
