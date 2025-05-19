@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-
 import { X } from 'lucide-react';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 interface Media {
   id: number;
@@ -9,15 +8,7 @@ interface Media {
   caption: string;
   type: 'image' | 'video';
 }
-const App = () => {
-  return (
-    <DotLottieReact
-      src="https://lottie.host/61cbb213-bff3-4505-a271-899127f8a9bf/y73iVNeibz.lottie"
-      loop
-      autoplay
-    />
-  );
-};
+
 const mediaItems: Media[] = [
   {
     id: 1,
